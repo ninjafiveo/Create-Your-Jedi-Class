@@ -1,0 +1,93 @@
+Lab: Create Your Jedi Class
+Objective:
+In this lab, you will practice defining a Python class, creating objects, and writing methods. You will also explore GitHub by cloning a starter repository, creating a branch, and submitting your work via a pull request.
+
+Instructions:
+Clone the Starter Repository:
+Open Visual Studio Code or your terminal and navigate to the folder where you want to clone the project.
+Run the following command to clone the starter repository:
+bash
+Copy code
+git clone https://github.com/ninjafiveo/Create-Your-Jedi-Class.git
+
+
+Navigate into the cloned project folder:
+bash
+Copy code
+cd Create-Your-Jedi-Class
+
+
+Create a New Branch:
+You will create a new branch to work on your Jedi class. Replace lastname_firstname with your actual name:
+bash
+Copy code
+git checkout -b lastname_firstname
+
+
+Define Your Jedi Class:
+In the project, open or create a Python file named jedi_lastname_firstname.py (replace lastname_firstname with your name).
+Define a Jedi class that includes at least the following attributes and methods:
+Attributes: name, lightsaber_color, rank.
+Methods:
+A method to display the Jedi’s introduction (name, rank, lightsaber color).
+A method that simulates a Force ability (e.g., Force push).
+Example Code:
+python
+Copy code
+class Jedi:
+    def __init__(self, name, lightsaber_color, rank):
+        self.name = name
+        self.lightsaber_color = lightsaber_color
+        self.rank = rank
+
+    def introduce(self):
+        print(f"I am {self.name}, a {self.rank} Jedi. My lightsaber is {self.lightsaber_color}.")
+
+    def force_push(self):
+        print(f"{self.name} uses Force Push!")
+
+# Create a Jedi object
+obiwan = Jedi("Obi-Wan Kenobi", "blue", "Master")
+obiwan.introduce()
+obiwan.force_push()
+
+
+Create Objects from Your Class:
+In your jedi_lastname_firstname.py file, create at least two different Jedi objects with different attributes (e.g., name, lightsaber color, and rank).
+Call the introduce method and another method to display each Jedi’s abilities.
+Stage, Commit, and Push Your Changes:
+After completing your code, check the status of your changes:
+bash
+Copy code
+git status
+
+
+Stage your new file and any modified files:
+bash
+Copy code
+git add jedi_lastname_firstname.py
+
+
+Commit your changes with a descriptive message:
+bash
+Copy code
+git commit -m "Added Jedi class with methods for introduction and Force abilities"
+
+
+Push your branch to the GitHub repository:
+bash
+Copy code
+git push origin lastname_firstname
+
+
+Create a Pull Request:
+Go to the GitHub repository in your browser: https://github.com/ninjafiveo/Create-Your-Jedi-Class.
+You should see an option to create a pull request for your branch. Click Compare & pull request.
+Add a description of the changes you made and submit the pull request.
+Submission:
+Once your pull request is created, take a screenshot of your branch and pull request in GitHub.
+Submit the screenshot and the pull request link via Google Classroom or your preferred platform.
+
+Bonus Task (Optional):
+Add another method to your Jedi class that simulates a lightsaber duel between two Jedi. This method could compare the ranks of the two Jedi and print out a winner.
+
